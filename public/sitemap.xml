@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	
+	<sitemap>
+	   	<loc>https://tokaido.io/en/sitemap.xml</loc>
+		
+	   	<lastmod>2018-07-08T11:39:59+10:00</lastmod>
+		
+	</sitemap>
+	
+	<sitemap>
+	   	<loc>https://tokaido.io/jp/sitemap.xml</loc>
+		
+	</sitemap>
+	
+</sitemapindex>

@@ -1,0 +1,48 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>    
+    <script src="https://asciinema.org/a/190655.js" data-speed="1.5"  id="asciicast-190655" async></script>
+  </div>
+  <div id="action-buttons">
+    <a class="button primary big" href="/docs/getting-started">Get Started</a> <a class="button outline big" href="https://github.com/tokaido-io">View on Github</a>
+    <p>Tokaido is still in alpha release. You should expect to encounter at least some bugs and problems.</p>
+  </div>
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <h3>Lightweight</h3>
+        <p>Tokaido uses Docker so it runs quick and with minimal system resources. The average Tokaido environment uses less than 300MB of RAM</p>
+      </div>
+      <div class="col col-4 item">
+        <h3>Fast</h3>
+        <p>Tokaido is the fastest way to provision Druapl dev environments. Most Tokaido environments launch in less than 15 seconds.</p>
+      </div>
+      <div class="col col-4 item">
+        <h3>Collaborative</h3>
+        <p>Simple and easy to manage configuration files can affect just your local instance, or be committed and shared with your colleagues</p>
+      </div>
+    </div>
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <h4>Powerful</h4>
+        <p>Tokaido runs out-of-the-box, but can be customised in incredible detail to provision the perfect environment for your site, again and again.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Production-quality</h4>
+        <p>Tokaido environments are replicas of production-grade Docker containers, running with sane defaults for security, caching, and performance.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Open Source</h4>
+        <p>Tokaido and the containers it runs are free, open source softwared. When we're out of Alpha, we'll release the code, but it's not quite ready yet.</p>
+    </div>
+  </div>
+</div>
+</div>
+
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}

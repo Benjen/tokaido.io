@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome to Tokaido on Tokaido</title>
+    <link>https://tokaido.io/</link>
+    <description>Recent content in Welcome to Tokaido on Tokaido</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Sun, 08 Jul 2018 11:39:59 +1000</lastBuildDate>
+    
+	<atom:link href="https://tokaido.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://tokaido.io/docs/getting-started/</link>
+      <pubDate>Sun, 08 Jul 2018 11:39:59 +1000</pubDate>
+      
+      <guid>https://tokaido.io/docs/getting-started/</guid>
+      <description>Drupal Requirements One of the most beautiful but challenging things about Drupal is that there are so many different ways you can use it. Tokaido is designed to support the most common use case:
+ Drupal 8.5 or newer is supported (Sorry, no Drupal 7 support yet) Your Drupal site should be installed and managed with Composer (although this isn&amp;rsquo;t essential)  Your Drupal site needs to be installed in one level down from your repository root.</description>
+    </item>
+    
+    <item>
+      <title>Using Tokaido</title>
+      <link>https://tokaido.io/docs/using/</link>
+      <pubDate>Sun, 08 Jul 2018 11:39:59 +1000</pubDate>
+      
+      <guid>https://tokaido.io/docs/using/</guid>
+      <description>Each Tokaido local development environment is a collection of Docker containers working together to run your Drupal site.
+You can use the Tokaido command line environment (CLI) to easily start and manage these environments. In this guide, we&amp;rsquo;re going to show you how to launch and maintain each environment.
+Note that Tokaido only supports Drupal 8.5 or newer, and requires that you use PHP Composer to manage your site.</description>
+    </item>
+    
+    <item>
+      <title>How Sync Works</title>
+      <link>https://tokaido.io/docs/sync/</link>
+      <pubDate>Sun, 08 Jul 2018 11:39:59 +1000</pubDate>
+      
+      <guid>https://tokaido.io/docs/sync/</guid>
+      <description>The Unison container runs a local Unison server, an rsync-like utility that performs fast bi-directional sync.
+When you start Tokaido by running tok up, it creates a background sync service using launchd (MacOS) or systemd (Linux). This will keep your local repo and the Tokaido environment in sync.
+You can disable the automatic creation of the background sync service with the createsyncservice: false config setting. If you do this, you can manually sync with the tok sync command, or start your own (foreground) sync process with tok watch.</description>
+    </item>
+    
+    <item>
+      <title>Tokaido Container Services</title>
+      <link>https://tokaido.io/docs/services/</link>
+      <pubDate>Sun, 08 Jul 2018 11:39:59 +1000</pubDate>
+      
+      <guid>https://tokaido.io/docs/services/</guid>
+      <description>Memcache The memcache containers run, well, ahem, it runs memcache. Obviously. We highly recommend using Memcache in your Drupal site. To use this container in Tokaido, simply add the following to your settings.tok.php file after you&amp;rsquo;re run the initial Site Install.
+$settings[&#39;cache&#39;][&#39;default&#39;] = &#39;cache.backend.memcache&#39;; $settings[&#39;memcache_storage&#39;][&#39;key_prefix&#39;] = &#39;default&#39;; $settings[&#39;memcache_storage&#39;][&#39;memcached_servers&#39;] = [&#39;memcache:11211&#39; =&amp;gt; &#39;default&#39;];  MySQL Tokaido inclues a MySQL container. This isn&amp;rsquo;t anything special we&amp;rsquo;ve created, but rather the official MySQL Docker image</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>https://tokaido.io/docs/faq/</link>
+      <pubDate>Sun, 08 Jul 2018 11:39:59 +1000</pubDate>
+      
+      <guid>https://tokaido.io/docs/faq/</guid>
+      <description>We hope you enjoy using Tokaido and that it makes your life as a Drupal developer much easier. If you run into problems, we&amp;rsquo;d be really grateful if you could share your experience with us so that we can try to help, and make Tokaido just that little bit better.
+What versions of Drupal are supported? Tokaido is tested with the latest supported version of Drupal 8. It should work with older 8.</description>
+    </item>
+    
+    <item>
+      <title>Help &amp; Support</title>
+      <link>https://tokaido.io/docs/support/</link>
+      <pubDate>Sun, 08 Jul 2018 11:39:59 +1000</pubDate>
+      
+      <guid>https://tokaido.io/docs/support/</guid>
+      <description>Asking Questions You can also find us in the #Tokaido channel on the Drupal Slack if you want to ask us any questions. This is a good place to start if you&amp;rsquo;re looking for help using Tokaido, or if you&amp;rsquo;re encountering some strange behaviour.
+Alternatively, you can message us on Twitter for small questions.
+Submitting Bugs The Github issue tracker is our preferred channel for bug reports, but please respect the following restrictions:</description>
+    </item>
+    
+    <item>
+      <title>Advanced Config</title>
+      <link>https://tokaido.io/docs/config/</link>
+      <pubDate>Sun, 08 Jul 2018 11:39:59 +1000</pubDate>
+      
+      <guid>https://tokaido.io/docs/config/</guid>
+      <description>Tokaido is incredibly flexible, and you can modify much of how your environment is created.
+There are four main configuration files that Tokaido utilises:
+.tok/config.yml This file provides a global config that is committed to your Git repo and shared by all of your peers. Think of this as project-wide settings.
+.tok/local/config.yml Not committed to Git and is used only in your local installation. This is useful if you want to do something specific with Tokaido, but not affect other developers.</description>
+    </item>
+    
+  </channel>
+</rss>

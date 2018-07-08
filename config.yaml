@@ -1,0 +1,63 @@
+baseurl: https://tokaido.io/
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+contentDir: content/en
+copyright: Released under the MIT license
+title: Tokaido
+theme: kube
+metadataformat: yaml
+canonifyurls: true
+# Enable Google Analytics by entering your tracking id
+googleAnalytics: 
+
+languages: 
+  en:    
+    languageName: English
+    params:
+      title: My blog
+      weight: 1
+  jp:
+    params:
+      linkedin: https://linkedin.com/fr/whoever
+      navigation:
+        help: tasukete
+    title: boku no burogu
+    weight: 2
+    contentDir: content/jp
+
+params:
+  description: An Effortless Local Drupal Development Environment
+  twitter: tokaido-io
+  googleAnalytics: UA-121891067-1
+
+  # Repository
+  provider: GitHub
+  repo_url: https://github.com/tokaido-io/tokaido-cli
+
+  version: 1.0.0
+  logo: images/logo.png
+  favicon: 
+
+  permalink: #
+
+menu:
+  main:
+  - identifier: docs
+    name: Docs
+    url: /docs
+    weight: 1
+  - identifier: github
+    name: GitHub
+    url: https://github.com/tokaido-io
+    weight: 10
+  - identifier: support
+    name: Help & Support
+    url: /docs/support
+    weight: 5
+
+
+blackfriday:
+  smartypants: true
+  fractions: true
+  smartDashes: true
+  plainIDAnchors: true
