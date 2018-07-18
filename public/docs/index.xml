@@ -18,7 +18,7 @@
       
       <guid>https://tokaido.io/docs/getting-started/</guid>
       <description>Drupal Requirements One of the most beautiful but challenging things about Drupal is that there are so many different ways you can use it. Tokaido is designed to support the most common use case:
- Drupal 8.5 or newer is supported (Sorry, no Drupal 7 support yet) Your Drupal site should be installed and managed with Composer (although this isn&amp;rsquo;t essential)  Your Drupal site needs to be installed in one level down from your repository root.</description>
+ Drupal 7 or 8 (with PHP 7.1 support) Your Drupal site should be installed and managed with Composer (although this isn&amp;rsquo;t essential)  Your Drupal site needs to be installed in one level down from your repository root.</description>
     </item>
     
     <item>
@@ -60,7 +60,7 @@ $settings[&#39;cache&#39;][&#39;default&#39;] = &#39;cache.backend.memcache&#39;
       
       <guid>https://tokaido.io/docs/faq/</guid>
       <description>We hope you enjoy using Tokaido and that it makes your life as a Drupal developer much easier. If you run into problems, we&amp;rsquo;d be really grateful if you could share your experience with us so that we can try to help, and make Tokaido just that little bit better.
-What versions of Drupal are supported? Tokaido is tested with the latest supported version of Drupal 8. It should work with older 8.</description>
+What versions of Drupal are supported? Tokaido is tested with the latest supported version of Drupal 7 and 8. We use PHP 7.</description>
     </item>
     
     <item>

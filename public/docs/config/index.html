@@ -2,7 +2,7 @@
 <html lang="">
 
 <head>
-  <meta name="generator" content="Hugo 0.42.2" />
+  <meta name="generator" content="Hugo 0.44" />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -161,15 +161,30 @@
 <li><kbd>project</kbd>: The project name (defaults to the name of the repo directory)</li>
 <li><kbd>path</kbd>: The path to the repo.</li>
 <li><kbd>force</kbd>: Set to true or use <code>--force</code> in the command line to override any safety prompts</li>
+<li><kbd>betaContainers</kbd>: Set to true to use the latest &lsquo;edge&rsquo; container versions</li>
 <li><kbd>customCompose</kbd>: Set to true to stop Tokaido from auto-managing your docker-compose.tok.yml file</li>
 <li><kbd>systemdPath</kbd>: Override the location of systemd user service definitions</li>
-<li><kbd>lauchdPath</kbd>: Override the location of launchd user agent definition</li>
+<li><kbd>launchdPath</kbd>: Override the location of launchd user agent definition</li>
 </ul>
 
 <p>In addition to these, you can also override the Drupal root directory name by specifying:</p>
 
 <pre><code>drupal: 
     path: {{directory name}}
+</code></pre>
+
+<p>You can enable Solr, and optionally change the version:</p>
+
+<pre><code>solr: 
+    enable: true
+    version: 6.6
+</code></pre>
+
+<p>You can also disable Memcache, or change the version:</p>
+
+<pre><code>memcache: 
+    enable: false
+    version: 1.5-alpine
 </code></pre>
 
 <p>And finally, you can enable xdebug by setting:</p>

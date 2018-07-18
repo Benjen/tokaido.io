@@ -11,7 +11,7 @@ toc: true
 ### Drupal Requirements
 One of the most beautiful but challenging things about Drupal is that there are so many different ways you can use it. Tokaido is designed to support the most common use case:
 
-- Drupal 8.5 or newer is supported (Sorry, no Drupal 7 support yet)
+- Drupal 7 or 8 (with PHP 7.1 support)
 - Your Drupal site should be installed and managed with Composer (although this isn't essential)
 
 <div class="message focus" data-component="message">Your Drupal site needs to be installed in one level down from your repository root. For example, if your repository root is <var>/Users/joe/code/my-drupal-repo</var> then your Drupal root would be <var>/Users/joe/code/my-drupal-repo/web</var> (or similar). 

@@ -33,15 +33,31 @@ All of these flags are applied at the root of the yaml document.
 - <kbd>project</kbd>: The project name (defaults to the name of the repo directory)
 - <kbd>path</kbd>: The path to the repo. 
 - <kbd>force</kbd>: Set to true or use `--force` in the command line to override any safety prompts
+- <kbd>betaContainers</kbd>: Set to true to use the latest 'edge' container versions
 - <kbd>customCompose</kbd>: Set to true to stop Tokaido from auto-managing your docker-compose.tok.yml file
 - <kbd>systemdPath</kbd>: Override the location of systemd user service definitions
-- <kbd>lauchdPath</kbd>: Override the location of launchd user agent definition
+- <kbd>launchdPath</kbd>: Override the location of launchd user agent definition
 
 In addition to these, you can also override the Drupal root directory name by specifying:
 
 ```
 drupal: 
     path: {{directory name}}
+```
+
+You can enable Solr, and optionally change the version:
+
+```
+solr: 
+    enable: true
+    version: 6.6
+```
+
+You can also disable Memcache, or change the version:
+```
+memcache: 
+    enable: false
+    version: 1.5-alpine
 ```
 
 And finally, you can enable xdebug by setting:

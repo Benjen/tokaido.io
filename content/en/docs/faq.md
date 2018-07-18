@@ -11,7 +11,7 @@ toc: false
 We hope you enjoy using Tokaido and that it makes your life as a Drupal developer much easier. If you run into problems, we'd be really grateful if you could share your experience with us so that we can try to help, and make Tokaido just that little bit better.
 
 ### What versions of Drupal are supported?
-Tokaido is tested with the latest supported version of Drupal 8. It should work with older 8.x versions, and with Drupal 7 (where PHP 7.1 is supported), but it's untested with anything other than the latest version of Drupal 8.
+Tokaido is tested with the latest supported version of Drupal 7 and 8. We use PHP 7.1, so your Drupal site will need to be compatible with this version. It's [definitely time to upgrade](http://php.net/supported-versions.php), if it isn't. 
 
 ### Do I have to put my Drupal site in /docroot? 
 Yes. The containers are configured to look for and serve a site from a the `docroot` folder. We might look at implementing a configuration option to change this in future. If you need this feature added, please let us know via [Gitter](https://gitter.im/tokaido-io/Lobby). 

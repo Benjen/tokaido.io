@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Tokaido"
-description: Tokaido provisions local Drupal 8 development environments in seconds
+description: Tokaido provisions local Drupal 7 and 8 development environments in seconds
 date: 2018-07-08T11:39:59+10:00
 weight: 20
 draft: false
