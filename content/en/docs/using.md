@@ -76,7 +76,7 @@ It's time to access the Tokaido environment directly, which you can do via SSH.
 This logs you into a container that shares a copy of your site with the other containers like Nginx. 
 
 ```
-$ ssh tokaido-test-project.ssh
+$ ssh tokaido-test-project.tok
 
       PHP Version      : 7.1.17
       Composer Version : 1.6.5
